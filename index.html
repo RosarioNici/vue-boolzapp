@@ -42,6 +42,19 @@
                     <input class="search-message" type="text"
                         placeholder="    &#128269;   cerca o inizia una nuova chat">
                 </div>
+                <div class="all-chat" id="booz">
+                    <div class="chat" v-for="chat in contacts">
+                        <div class="d-flex align-items-center p-3">
+                            <div><img :src="chat.avatar" alt="Sofia"></div>
+                            <div class="px-1">
+                                <span>{{chat.name}}</span>
+                                <p class="time">Ultimo messaggio inviato</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
             <!-- qui inizia la parte di destra dedicata esclusivamente alla chat -->
             <div class="chat-section flex-grow-1">

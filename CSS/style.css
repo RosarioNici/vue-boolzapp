@@ -89,3 +89,13 @@ img {
     width: 100%;
     border: none;
 }
+
+.chat {
+    width: 100%;
+    background-color: hsl(0deg 0% 92%);
+}
+
+.all-chat {
+    overflow-y: scroll;
+    height: 601.17px;
+}
