@@ -15,7 +15,7 @@ main {
 
 .chat-list {
     width: 35%;
-    background-color: hsl(200deg 100% 42%);
+    background-color: hsl(0deg 0% 100%);
     border-right: 1px solid hsl(0deg 0% 69%);
 }
 
@@ -92,10 +92,27 @@ img {
 
 .chat {
     width: 100%;
-    background-color: hsl(0deg 0% 92%);
+    border-bottom: 1px solid rgb(211, 211, 211);
 }
 
 .all-chat {
     overflow-y: scroll;
     height: 601.17px;
+}
+
+.active {
+    background-color: hsl(180deg 5% 92%);
+}
+
+.container-message {
+    width: 542px;
+    position: relative;
+}
+
+.received {
+    background-color: antiquewhite;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+
 }

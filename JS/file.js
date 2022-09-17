@@ -3,6 +3,7 @@
 const app = new Vue({
     el: '#booz',
     data: {
+        classIndex: 0,
         contacts: [
             {
                 name: 'Michele',
@@ -165,6 +166,13 @@ const app = new Vue({
                     }
                 ],
             }
-        ]
+        ],
+
+    },
+    methods: {
+        selectChat(index) {
+            this.classIndex = index;
+
+        }
     }
 })
