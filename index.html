@@ -72,10 +72,12 @@
                     </div>
                 </div>
                 <div class="board-message">
-                    <div class="container-messages">
-                        <div v-for="mess in contacts[classIndex].messages" class="my-3 message p-2"
-                            :class="mess.status">
-                            <p>{{mess.message}}</p>
+                    <div class="container-messages d-flex flex-column px-5 py-5">
+                        <div v-for="mess in contacts[classIndex].messages" :class="mess.status"
+                            class="item-message px-1 my-2">
+                            <div class="d-flex justify-content-between align-items-baseline">
+                                <p>{{mess.message}}</p> <span class="fs-4 down">&#8964;</span>
+                            </div>
                             <div class="text-end time-mess">15:00</div>
                         </div>
                     </div>

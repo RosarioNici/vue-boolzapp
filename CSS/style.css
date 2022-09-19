@@ -107,14 +107,9 @@ img {
     background-color: hsl(180deg 5% 92%);
 }
 
-.container-message {
+.container-messages {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-
 }
 
 .input-message {
@@ -133,10 +128,25 @@ img {
 }
 
 .message {
-
     background-color: azure;
     width: 30%;
     border-radius: 15px;
+}
+
+
+
+.time-mess {
+    color: hsl(0deg 0% 69%);
+    font-size: small;
+}
+
+.down {
+    color: hsl(0deg 0% 69%)
+}
+
+.item-message {
+    width: 40%;
+    border-radius: 10px;
 }
 
 .sent {
@@ -144,7 +154,6 @@ img {
     background-color: hsl(94deg 84% 85%);
 }
 
-.time-mess {
-    color: hsl(0deg 0% 69%);
-    font-size: small;
+.received {
+    background-color: hsl(0deg 0% 100%);
 }
