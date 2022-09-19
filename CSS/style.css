@@ -1,5 +1,6 @@
 body {
     height: 100vh;
+    position: relative;
 
 }
 
@@ -25,7 +26,9 @@ main {
 
 .message-page {
     height: 100%;
-
+    position: absolute;
+    top: 50px;
+    left: 300px;
 }
 
 .main-user {
@@ -107,6 +110,21 @@ img {
 .container-message {
     width: 542px;
     position: relative;
+}
+
+.input-message {
+    width: 600px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.fa-face-smile,
+.fa-microphone,
+.fa-paper-plane {
+    font-size: x-large;
+    color: hsl(0deg 0% 69%);
 }
 
 .received {

@@ -4,6 +4,7 @@ const app = new Vue({
     el: '#booz',
     data: {
         classIndex: 0,
+        addMessage: '',
         contacts: [
             {
                 name: 'Michele',
@@ -173,6 +174,16 @@ const app = new Vue({
         selectChat(index) {
             this.classIndex = index;
 
+        },
+        newMessage() {
+            const newItem = this.addMessage[this.classIndex]
+            newItem.this.messages.push({
+                date: '19/09/2022 15:30:55',
+                message: this.addMessage,
+                status: 'sent'
+            })
+
+            this.addMessage = ''
         }
     }
 })
