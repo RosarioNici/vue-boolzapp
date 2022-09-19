@@ -17,7 +17,7 @@
 
 <body>
     <header></header>
-    <main>
+    <main id="booz">
         <section class="message-page container-md d-flex">
             <!-- qui abbiamo la lista contatti -->
             <div class="chat-list">
@@ -40,7 +40,7 @@
                     <input class="search-message" type="text"
                         placeholder="    &#128269;   cerca o inizia una nuova chat">
                 </div>
-                <div class="all-chat" id="booz">
+                <div class="all-chat">
                     <div class="chat" v-for="(chat, index) in contacts" :class="{ active : index === classIndex}"
                         @click="selectChat(index)">
                         <div class="d-flex align-items-center p-3">
@@ -73,11 +73,11 @@
                 </div>
                 <div class="board-message">
                     <div class="container-messages">
-                        <div v-for="mess in contacts[classIndex].message" class="my-3"
-                            :class="{ received : contacts[classIndex].message.status === 'received'}">
-                            <p>{{mess.messages}}</p>
+                        <div v-for="mess in contacts[classIndex].messages" class="my-3 message p-2"
+                            :class="mess.status">
+                            <p>{{mess.message}}</p>
+                            <div class="text-end time-mess">15:00</div>
                         </div>
-                        <div class="sent"></div>
                     </div>
                 </div>
                 <div class="footer-chat-section p-4 d-flex justify-content-around align-items-center">
