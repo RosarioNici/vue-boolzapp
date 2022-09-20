@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="search p-2">
-                    <input class="search-message" type="text"
+                    <input class="search-message" type="text" v-model="searcChat"
                         placeholder="    &#128269;   cerca o inizia una nuova chat">
                 </div>
                 <div class="all-chat">
@@ -76,7 +76,12 @@
                         <div v-for="mess in contacts[classIndex].messages" :class="mess.status"
                             class="item-message px-1 my-2">
                             <div class="d-flex justify-content-between align-items-baseline">
-                                <p>{{mess.message}}</p> <span class="fs-4 down">&#8964;</span>
+                                <div>
+                                    <p class="tex-mess p-1">{{mess.message}}</p>
+                                </div>
+                                <div>
+
+                                </div>
                             </div>
                             <div class="text-end time-mess">15:00</div>
                         </div>

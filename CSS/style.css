@@ -157,3 +157,15 @@ img {
 .received {
     background-color: hsl(0deg 0% 100%);
 }
+
+.text-mess {
+    margin-bottom: 0 !important;
+}
+
+button {
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    color: grey;
+
+
+}

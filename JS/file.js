@@ -5,6 +5,8 @@ const app = new Vue({
     data: {
         classIndex: 0,
         addMessage: '',
+        elimina: '',
+        searcChat: '',
         contacts: [
             {
                 name: 'Michele',
@@ -178,12 +180,25 @@ const app = new Vue({
         newMessage() {
             const newItem = this.contacts[this.classIndex]
             newItem.messages.push({
-                date: '19/09/2022 15:30:55',
+                date: '15:00',
                 message: this.addMessage,
                 status: 'sent'
             })
 
             this.addMessage = ''
+        },
+        cutMessage(i) {
+            const newtodoList = this.todoList.slice(i, 1)
+            this.todoList = newtodoList
+        },
+
+        dinamicSearch() {
+            this.contacts.forEach(conctact => {
+                console.log(searcChat)
+
+            });
+
         }
+
     }
 })
